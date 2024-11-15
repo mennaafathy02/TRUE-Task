@@ -66,10 +66,11 @@ ul {
 /* header */
 .header {
   position: fixed !important;
+  background-color: hsla(0, 0%, 0%, 5%);
   width: 100%;
   padding: 1rem;
   z-index: 20;
-  background-color: transparent !important;
+  /* background-color: transparent !important; */
 }
 
 .header__container {
