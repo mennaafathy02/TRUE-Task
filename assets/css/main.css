@@ -445,7 +445,7 @@ ul {
   position: absolute;
   bottom: 3rem;
   right: 0.875rem;
-  background-color: var(--very_pale_yellow);
+  background-color: rgba(255, 184, 0, 0.4);
   border-radius: 0.3125rem;
   position: relative;
 }
@@ -716,7 +716,7 @@ ul {
 
 .product-price {
   position: absolute;
-  background-color: #ffb800;
+  background-color: hwb(43 0% 0%);
   border: solid #fff 5px;
   left: 0px;
   bottom: 40px;
