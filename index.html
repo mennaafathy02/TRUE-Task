@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/logo.webp" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom style -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container-xl">
+        <img
+          src="./assets/imgs/logo-light.webp"
+          alt="Logo"
+          class="header__logo"
+        />
+        <form class="header__search-bar search-bar">
+          <i class="search-bar__icon bi bi-search"></i>
+          <input type="text" class="search-bar__input" placeholder="البحث" />
+        </form>
+        <div class="header__actions">
+          <button class="header__button header__button--login">
+            <i class="bi bi-person-fill header__button-icon"></i>
+            <span class="header__button-text"> تسجيل الدخول </span>
+          </button>
+          <button class="header__button header__button--wishlist">
+            <i
+              class="bi bi-heart header__button-icon header__button-icon--outline"
+            ></i>
+            <i
+              class="bi bi-heart-fill header__button-icon header__button-icon--filled"
+            ></i>
+          </button>
+          <button class="header__button header__button--cart">
+            <i
+              class="header__button-icon bi bi-cart header__button-icon--filled"
+            ></i>
+            <i
+              class="header__button-icon bi bi-cart-fill header__button-icon--outline"
+            ></i>
+            <span class="header__button-text"> عربة التسوق </span>
+          </button>
+        </div>
+        <div class="header__actions__mobile">
+          <button class="header__actions__mobile__button header__mobile--menu">
+            <i class="bi bi-list header__mobile--icon"></i>
+          </button>
+          <ul class="header__mobile__list">
+            <li class="header__mobile__list_item">
+              <button
+                class="header__mobile__button header__mobile__button--login"
+              >
+                <i class="bi bi-person-fill header__mobile__button-icon"></i>
+                <span class="header__mobile__button-text"> تسجيل الدخول </span>
+              </button>
+            </li>
+            <li class="header__mobile__list_item">
+              <button
+                class="header__mobile__button header__mobile__button--wishlist"
+              >
+                <i
+                  class="bi bi-heart-fill header__mobile__button-icon header__mobile__button-icon--filled"
+                ></i>
+              </button>
+            </li>
+            <li class="header__mobile__list_item">
+              <button
+                class="header__mobile__button header__mobile__button--cart"
+              >
+                <i
+                  class="header__mobile__button-icon bi bi-cart-fill header__mobile__button-icon--outline"
+                ></i>
+                <span class="header__mobile__button-text"> عربة التسوق </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__header container-xl">
+          <div class="hero__header__menu">
+            <i class="bi bi-list hero__header__menu-icon"></i>
+            <span> الاقسام </span>
+          </div>
+          <nav class="hero__header__nav">
+            <ul class="hero__header__nav__list">
+              <li class="nav__list__item">
+                <a
+                  href=""
+                  class="nav__list__item-link nav__list__item-link--active"
+                >
+                  الرئيسية
+                </a>
+              </li>
+              <li class="nav__list__item">
+                <a href="" class="nav__list__item-link"> المتجر </a>
+              </li>
+              <li class="nav__list__item">
+                <a href="" class="nav__list__item-link"> معلومات عنا </a>
+              </li>
+              <li class="nav__list__item">
+                <a href="" class="nav__list__item-link"> اتصل بنا </a>
+              </li>
+              <li class="nav__list__item">
+                <a href="" class="nav__list__item-link"> الصفحات </a>
+              </li>
+            </ul>
+            <div class="hero__header__nav__menu">
+              <i class="bi bi-list hero__header__menu-icon"></i>
+            </div>
+          </nav>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__card--title tajawal-bold">
+            رفاهية عربيتك مسؤليتنا
+          </div>
+          <div class="hero__card--desc tajawal-bold">
+            بتفكر في حماية بتفكر في رقي وتميز عليك وعلي مكان واحد بيت العناية
+            الفائقه للسيارات
+          </div>
+          <button class="hero__card--btn tajawal-bold">تسوق الان</button>
+        </div>
+      </section>
+
+      <section class="features container-xl">
+        <div class="features__container row">
+          <div class="features_card tajawal-medium col-lg col-md-4 text-center">
+            <i class="bi bi-headset features_card--icon"></i>
+            <span class="features_card-title">
+              الدعم الفني مستمر علي مدار اليوم
+            </span>
+          </div>
+          <div class="features_card tajawal-medium col-lg col-md-4 text-center">
+            <i class="bi bi-tag-fill features_card--icon"></i>
+            <span class="features_card-title">
+              أفضل العروض منتج عالي الجوده
+            </span>
+          </div>
+          <div class="features_card tajawal-medium col-lg col-md-4 text-center">
+            <i class="bi bi-phone-fill features_card--icon"></i>
+            <span class="features_card-title">
+              دعم على مدار الساعة طوال أيام الاسبوع
+            </span>
+          </div>
+          <div class="features_card tajawal-medium col-lg col-md-4 text-center">
+            <i class="bi bi-truck features_card--icon"></i>
+            <span class="features_card-title">
+              الشحن مجاني للطلبات فوق 10الاف
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories container-xl">
+        <h2 class="categories__title tajawal-bold">تسوق حسب الاقسام</h2>
+        <div class="categories__cards row">
+          <div class="categories__card col-12 col-sm">
+            <img class="categories__card--img" src="./assets/imgs/cate1.webp" />
+            <button class="categories__card--btn tajawal-bold">
+              الاجزاء الداخلية
+            </button>
+          </div>
+          <div class="categories__card col-12 col-sm">
+            <img class="categories__card--img" src="./assets/imgs/cate2.webp" />
+            <button class="categories__card--btn tajawal-bold">
+              الاجزاء الداخلية
+            </button>
+          </div>
+          <div class="categories__card col-12 col-sm">
+            <img class="categories__card--img" src="./assets/imgs/cate3.webp" />
+            <button class="categories__card--btn tajawal-bold">
+              الاجزاء الداخلية
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="products">
+        <div class="products__tabs">
+          <ul class="products__tabs__list">
+            <li
+              class="products__tabs__list-item products__tabs__list-item-active"
+            >
+              الجميع
+            </li>
+            <li class="products__tabs__list-item">الجديد</li>
+            <li class="products__tabs__list-item">الاكثر مبيعا</li>
+            <li class="products__tabs__list-item">العروض</li>
+          </ul>
+        </div>
+        <div class="products__tabs__content container-xl">
+          <div class="row products__tabs__content-row">
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product1.webp"
+              />
+              <div class="products__tabs__content__product-wishlist">
+                <i
+                  class="bi bi-heart-fill products__tabs__content__product-icon products__tabs__content__product-icon-filled"
+                ></i>
+              </div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product2.webp"
+              />
+              <div class="products__tabs__content__product-wishlist">
+                <i
+                  class="bi bi-heart products__tabs__content__product-icon products__tabs__content__product-icon-outline"
+                ></i>
+              </div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product3.webp"
+              />
+              <div class="products__tabs__content__product-wishlist">
+                <i
+                  class="bi bi-heart products__tabs__content__product-icon products__tabs__content__product-icon-outline"
+                ></i>
+              </div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product4.webp"
+              />
+              <div class="products__tabs__content__product-new">الجديد</div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product5.webp"
+              />
+              <div class="products__tabs__content__product-new">الجديد</div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product6.webp"
+              />
+              <div class="products__tabs__content__product-new">الجديد</div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product7.webp"
+              />
+              <div class="products__tabs__content__product-offers">العروض</div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product8.webp"
+              />
+              <div class="products__tabs__content__product-offers">العروض</div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-sm-6 col-md-4 products__tabs__content__product"
+            >
+              <img
+                class="products__tabs__content__product-img img-fluid"
+                src="./assets/imgs/product9.webp"
+              />
+              <div class="products__tabs__content__product-offers">العروض</div>
+              <div class="products__tabs__content__product__body">
+                <div class="products__tabs__content__product__body-cart">
+                  <i
+                    class="products__tabs__content__product-icon bi bi-cart products__tabs__content__product-icon-filled"
+                  ></i>
+                </div>
+                <div class="products__tabs__content__product__body-text">
+                  <p class="products__tabs__content__product__body-name">
+                    إسم المنتج
+                  </p>
+                  <p class="products__tabs__content__product__body-price">
+                    100
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offers__banners container-xl">
+        <div class="row">
+          <div class="offers__banner col-12 col-sm-6">
+            <img
+              src="./assets/imgs/banner1.webp"
+              alt=""
+              class="offers__banner--img img-fluid"
+            />
+            <div class="offers__banner--body">
+              <p class="offers__banner--text tajawal-bold">20%</p>
+              <p class="offers__banner--text tajawal-bold">عرض خاص</p>
+              <button class="offers__banner--btn tajawal-bold">
+                تسوق الان
+              </button>
+            </div>
+          </div>
+          <div class="offers__banner col-12 col-sm-6">
+            <img
+              src="./assets/imgs/banner2.webp"
+              alt=""
+              class="offers__banner--img img-fluid"
+            />
+            <div class="offers__banner--body">
+              <p class="offers__banner--text tajawal-bold">20%</p>
+              <p class="offers__banner--text tajawal-bold">عرض خاص</p>
+              <button class="offers__banner--btn tajawal-bold">
+                تسوق الان
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="best__seller">
+        <div class="container-xl">
+          <div id="productSlider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="product-card">
+                      <div class="product-image">
+                        <img
+                          src="./assets/imgs/product6.webp"
+                          class="img-fluid"
+                          alt="Product 1"
+                        />
+                      </div>
+                      <div class="product-image-plus">
+                        <i class="bi bi-plus product-image-icon"></i>
+                      </div>
+                      <div class="product-info">
+                        <div class="product-reviews">
+                          <p>(4.5)</p>
+                          <i class="bi bi-star-fill product-reviews-icon"></i>
+                          <div class="product-reviews-imgs">
+                            <img
+                              src="./assets/imgs/user1.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user2.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                            <img
+                              src="./assets/imgs/user3.webp"
+                              class="product-reviews-img img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <h5>الاجزاء لخارجيه</h5>
+                        <p>
+                          كفر جلد في كتان جراب طارة (هاند ميد) فرش جلد وجلد
+                          قطيفة
+                        </p>
+                        <div class="product-price">2500ج</div>
+                      </div>
+                      <button class="btn product-btn tajawal-bold">
+                        تسوق الان
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Add more product cards in this row as needed -->
+                </div>
+              </div>
+            </div>
+            <div class="best__seller_arrows">
+              <a
+                class="next"
+                href="#productSlider"
+                role="button"
+                data-slide="next"
+              >
+                <img
+                  aria-hidden="true"
+                  src="./assets/imgs/arrow-right.webp"
+                  class="img-fluid"
+                />
+
+                <span class="sr-only">Next</span>
+              </a>
+              <a
+                class="prev"
+                href="#productSlider"
+                role="button"
+                data-slide="prev"
+              >
+                <img
+                  aria-hidden="true"
+                  src="./assets/imgs/arrow-left.webp"
+                  class="img-fluid"
+                />
+
+                <span class="sr-only">Previous</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="new__products container-xl">
+        <div class="new__products__head">
+          <h2 class="tajawal-bold">المنتجات الحديثة</h2>
+          <a href=""> إقرء المزيد</a>
+        </div>
+
+        <div class="row new__products_row">
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new1.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new2.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new3.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new4.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new5.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new6.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new7.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new8.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new9.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new10.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new11.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+          <div class="new__products_item">
+            <div class="new__products_item-img">
+              <img src="./assets/imgs/new12.webp" alt="" class="img-fluid" />
+            </div>
+            <div class="new__products_item-body">
+              <h3 class="tajawal-bold">كفر جلد في كتان</h3>
+              <p>100منتج</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="special__offers">
+        <div class="container-xl special__offers__container">
+          <div class="row">
+            <div class="col-sm-6 special__offers__title">
+              <h2 class="tajawal-bold">عروضنا الخاصه</h2>
+              <p class="tajawal-bold">فيلم حماية معالج بتقنية النانو سيراميك</p>
+            </div>
+            <div class="col-sm-6">
+              <img
+                class="special__offers__img img-fluid"
+                src="./assets/imgs/special-off.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-xl">
+        <div class="footer__container">
+          <div class="footer__lists_logo">
+            <img src="./assets/imgs/logo.webp" class="img-fluid" />
+            <p>لو بتدور على رفاهية عربيتك انت هنا في المكان الصح </p>
+          </div>
+          <div class="footer__lists">
+            <ul class="footer__list">
+              <li class="footer__list__item tajawal-medium">الرئيسيه</li>
+              <li class="footer__list__item">الأقسام</li>
+              <li class="footer__list__item">أفضل العروض</li>
+              <li class="footer__list__item">كل المنتجات</li>
+              <li class="footer__list__item">عربة التسوق</li>
+              <li class="footer__list__item">الدفع</li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list__item tajawal-medium">خدمة العملاء</li>
+              <li class="footer__list__item">إتصل بنا</li>
+              <li class="footer__list__item">الأحكام والشروط</li>
+              <li class="footer__list__item">معلومات عننا</li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__list__item tajawal-medium">معلومات الاتصال</li>
+              <li class="footer__list__item">
+                اهلا بيك و سعداء جدا بمعاملتك للتواصل
+              </li>
+              <li class="footer__list__item">
+                <i class="bi bi-whatsapp footer__list__item-icon"></i>
+                <span>الواتساب </span>
+              </li>
+              <li class="footer__list__item">
+                <i class="bi bi-telephone footer__list__item-icon"></i>
+                <span>رقم التلفون : 01097508094 </span>
+              </li>
+              <li class="footer__list__item">
+                <i
+                  class="bi bi-geo-alt footer__list__item-icon"
+                  footer__list__item-icon
+                ></i>
+                <a
+                  class="footer__list__item-link"
+                  href="https://maps.app.goo.gl/pXu8yT1PaG3VnJr77"
+                  >https://maps.app.goo.gl/pXu8yT1PaG3VnJr77
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_copy-right">
+          <ul class="footer_copy-right-list">
+            <li class="footer_copy-right-list-item">
+              <i class="bi bi-chat footer__list__item-icon"></i>
+            </li>
+            <li class="footer_copy-right-list-item">
+              <i class="bi bi-twitter footer__list__item-icon"></i>
+            </li>
+            <li class="footer_copy-right-list-item">
+              <i class="bi bi-instagram footer__list__item-icon"></i>
+            </li>
+            <li class="footer_copy-right-list-item">
+              <i class="bi bi-facebook footer__list__item-icon"></i>
+            </li>
+          </ul>
+          <div>جميع الحقوق محفوظة لشركة ture 2024.</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
